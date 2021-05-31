@@ -1,6 +1,8 @@
 package Algoritmos;
 
-public class Punto {
+import java.util.Comparator;
+
+public class Punto implements Comparator<Punto> {
 	double x;
 	double y;
 
@@ -27,5 +29,15 @@ public class Punto {
 		boolean bool= (this.x== ((Punto) p).getX()&& this.y==((Punto)p).getY());
 		return bool;
 	}
+
+	@Override
+	public int compare(Punto o1, Punto o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 	
-}
+	}
+	
+	
+
